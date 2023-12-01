@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="converter-from">
+        <input type="text" class="inputSum">
+
+        <select name="currency" id="selector-from">
+          <option value="$">$</option>
+          <option value="€">€</option>
+          <option value="₴">₴</option>
+          <option value="£">£</option>
+          <option value="¥">¥</option>
+        </select>
+      </div>
+
+      <div class="converter-to">
+        <input disabled type="text" class="outputSum">
+
+        <select name="currency" id="selector-to">
+          <option value="€">€</option>
+          <option value="₴">₴</option>
+          <option value="£">£</option>
+          <option value="¥">¥</option>
+        </select>
+      </div>
+
+      <button class = 'apply'>apply</button>
+
+      <div class="other-currency">
+        <table class="table">
+          <tr>
+            <td class="currency1"></td>
+            <td class="currency2"></td>
+            <td class="currency3"></td>
+          </tr>
+          <tr>
+            <td class="value1"></td>
+            <td class="value2"></td>
+            <td class="value3"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
